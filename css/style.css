@@ -1,0 +1,41 @@
+@media (min-width: 772px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    figure {
+      border-radius: 50%;
+    }
+    figure:last-child {
+      grid-column: 1 / span 2;
+    }
+  }
+
+
+  @media (min-width: 992px) {
+    figure {
+      border-radius: 0;
+    }
+    figure:nth-child(3n) {
+      grid-column: 1 / span 2;
+    }
+  }
+
+  @media (prefers-reduced-motion) {
+    .jump-to-top {
+      scroll-behavior: auto;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #222;
+    }
+    p, h1, h2, a {
+      color: #fff;
+    }
+    .grid figure {
+      border-color: #fff;
+    }
+  }
+
+  
